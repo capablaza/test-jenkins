@@ -9,6 +9,7 @@ pipeline {
         }                    
         stage('Run Container'){
             steps {
+                sh "echo 'test'"
                 sh "docker run hello-world &"
             }
         }
